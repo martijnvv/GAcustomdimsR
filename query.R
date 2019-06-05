@@ -62,4 +62,4 @@ summary_data_empty[,c("index", "name", "scope", "created", "updated")] -> summar
 c(list(summary_data,summary_data_empty), list_new) -> list_new
 
 # Write to Excel ----------------------------------------------------------
-write_xlsx(list_new, paste0("output/reports/customDimensions_",uaId,".xlsx"))
+write_xlsx(list_new, paste0("customDimensions_",uaId,".xlsx"))
