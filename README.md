@@ -1,5 +1,5 @@
 # GA custom dimension export to Excel with R
-Using the googleanalyticsR and openxlsx R package, I pull all the data from a Google Analytics view.
+Using the googleanalyticsR and writexl R package, I pull all the data from a Google Analytics view.
 It exports all the data in a summarised tab, and each custom dimension is also exported to each own Excel tab.
 
 ![summary output tab in export](https://github.com/martijnvv/GAcustomdimsR/blob/master/customdims.PNG)
