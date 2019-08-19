@@ -31,7 +31,8 @@ print(paste0("finished with custom dimension ", i))
 }
 
 # Get all custom dimension values in a list -------------------------------
-list <- mget( ls( pattern ="^dimension[1-9][0-9]?$|^100$" ) )
+#list <- mget( ls( pattern ="^dimension[1-9][0-9]?$|^100$" ) )
+list <- mget( ls( pattern ="([1-9]|[1-8][0-9]|9[0-9]|1[0-9]{2}|200)" ) )
 Filter(length, list) -> list_new
 
 data.frame(sapply(list_new, nrow)) -> summary_data
